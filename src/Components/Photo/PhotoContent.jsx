@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import PhotoComents from "./PhotoComents";
 
 const PhotoContent = ({ data }) => {
-  const { photo, coments } = data;
+  const { photo, comments } = data;
 
   return (
     <div className={styles.photo}>
@@ -26,7 +26,7 @@ const PhotoContent = ({ data }) => {
           </ul>
         </div>
       </div>
-      <PhotoComents id={photo.id} coments={coments} />
+      <PhotoComents id={photo.id} comments={comments} />
     </div>
   );
 };
